@@ -11,7 +11,9 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.min.js"></script> 
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-<script src="lib/interlude.js"></script> 
+
+<script src="lib/interlude.js"></script>
+<script src="lib/CV_particles.js"></script>  
 
 <style>
 	#sample
@@ -34,7 +36,13 @@
 		o.centered	= true;
 		// var a = new Interlude.Loading(o);
 		
-		var x = new Interlude.Forms(o);
+		// var x = new Interlude.Forms(o);
+		
+		
+		var p = {};
+		p.div = "sample";
+		var z = new Particles(p);
+		
 		
 	};
 
